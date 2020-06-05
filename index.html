@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Matcher with JS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>COLOR MATCHER</h1>
+        <h3>USING XKCD COLORS</h3>
+    </header>
+    
+    <section class="divider">
+        <div id="match-text">
+            <h2>COLOR MATCHES FOR YOUR SELECTED COLOR: MAXIMUM 50 MATCHES</h2>
+        </div>
+    </section>
+
+    <main>
+        <aside>
+            <h2>COLOR INTERFACE</h2>
+            <h3>Select Options below</h3>
+            <ul>
+                <li>
+                    <label for="selectedColor">Enter Color Hex Value<label>
+                    <input id="selectedColor" type="text">
+                </li>
+                <li></li>
+                <li><button id="showAll-btn" onclick="getAll()">Show All Colors</button></li>
+                <li><button id="clear-btn" onclick="clearAll()">Clear Table</button></li>
+            </ul>
+        </aside>
+
+        <table id="colorTable">
+            <thead>
+                <th>COLOR</th>
+                <th>NAME</th>
+                <th>HEX</th>
+                <th>RGB</th>
+                <th>CMYK</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="main.js"></script>
+    <script src="compareColor.js"></script>
+</body>
+</html>
